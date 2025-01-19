@@ -1,5 +1,5 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
+import { Button } from "@upcord/ui/button"
 import React from "react";
 import styles from "./page.module.css";
 
