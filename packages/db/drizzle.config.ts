@@ -1,9 +1,9 @@
 import { type Config } from "drizzle-kit";
 
-import { env } from "@/env";
+import { env } from "@upcord/env";
 
 export default {
-  schema: "./src/server/db/schema.ts",
+  schema: "./src/schema.ts",
   dialect: "postgresql",
   dbCredentials: {
     url: env.DATABASE_URL,

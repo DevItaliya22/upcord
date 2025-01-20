@@ -7,7 +7,23 @@ settings:
 importers:
 
   .:
+    dependencies:
+      drizzle-kit:
+        specifier: ^0.24.0
+        version: 0.24.2
+      drizzle-orm:
+        specifier: ^0.33.0
+        version: 0.33.0(@cloudflare/workers-types@4.20250109.0)(@types/react@18.3.18)(postgres@3.4.5)(react@19.0.0)
+      env:
+        specifier: ^0.0.2
+        version: 0.0.2
+      postgres:
+        specifier: ^3.4.5
+        version: 3.4.5
     devDependencies:
+      '@upcord/env':
+        specifier: workspace:*
+        version: link:packages/env
       prettier:
         specifier: ^3.2.5
         version: 3.3.3
@@ -165,6 +181,17 @@ importers:
       typescript:
         specifier: 5.5.4
         version: 5.5.4
+
+  packages/db: {}
+
+  packages/env:
+    dependencies:
+      '@t3-oss/env-nextjs':
+        specifier: ^0.10.1
+        version: 0.10.1(typescript@5.5.4)(zod@3.24.1)
+      zod:
+        specifier: ^3.23.3
+        version: 3.24.1
 
   packages/eslint-config:
     devDependencies:
@@ -1482,6 +1509,10 @@ packages:
   enhanced-resolve@5.18.0:
     resolution: {integrity: sha512-0/r0MySGYG8YqlayBZ6MuCfECmHFdJ5qyPh8s8wa5Hnm6SaFLSK1VYCbj+NKp090Nm1caZhD+QTnmxO7esYGyQ==}
     engines: {node: '>=10.13.0'}
+
+  env@0.0.2:
+    resolution: {integrity: sha512-yP8LfjO4ughSHD/3HgLPinWzexmaOGvRfs2TFx0SZhOm7j1xPi9evjuGcLiNVHIGLmcsgMak4eDbBzlYqGIVxw==}
+    engines: {node: '>= 0.5.9'}
 
   es-abstract@1.23.5:
     resolution: {integrity: sha512-vlmniQ0WNPwXqA0BnmwV3Ng7HxiGlh6r5U6JcTMNx8OilcAGqVJBHJcPjqOMaczU9fRuRK5Px2BdVyPRnKMMVQ==}
@@ -3877,6 +3908,13 @@ snapshots:
       postgres: 3.4.5
       react: 18.3.1
 
+  drizzle-orm@0.33.0(@cloudflare/workers-types@4.20250109.0)(@types/react@18.3.18)(postgres@3.4.5)(react@19.0.0):
+    optionalDependencies:
+      '@cloudflare/workers-types': 4.20250109.0
+      '@types/react': 18.3.18
+      postgres: 3.4.5
+      react: 19.0.0
+
   eastasianwidth@0.2.0: {}
 
   emoji-regex@8.0.0: {}
@@ -3887,6 +3925,8 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.1
+
+  env@0.0.2: {}
 
   es-abstract@1.23.5:
     dependencies:
