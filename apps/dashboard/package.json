@@ -20,7 +20,6 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache"
   },
   "dependencies": {
-    "@upcord/ui": "workspace:*",
     "@t3-oss/env-nextjs": "^0.10.1",
     "drizzle-orm": "^0.33.0",
     "geist": "^1.3.0",
